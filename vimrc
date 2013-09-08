@@ -1,4 +1,6 @@
-call pathogen#infect()
+call pathogen#incubate()
+call pathogen#helptags()
+
 :autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | sil! lcd %:p:h | endif
 autocmd BufNewFile,BufRead *.json set ft=javascript
 map ,jt :%!json_xs -f json -t json-pretty
