@@ -5,6 +5,8 @@ if has("autocmd")
 	filetype plugin indent on
 endif
 
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 :autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | sil! lcd %:p:h | endif
 autocmd BufNewFile,BufRead *.json set ft=javascript
 map ,jt :%!json_xs -f json -t json-pretty
