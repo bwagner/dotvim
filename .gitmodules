@@ -3,3 +3,6 @@
 	url = https://github.com/tpope/vim-pathogen.git
 	ignore = dirty
 	# http://www.nils-haldenwang.de/frameworks-and-tools/git/how-to-ignore-changes-in-git-submodules
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive
