@@ -1,5 +1,9 @@
 call pathogen#incubate()
 call pathogen#helptags()
+execute pathogen#infect()
+if has("autocmd")
+	filetype plugin indent on
+endif
 
 :autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | sil! lcd %:p:h | endif
 autocmd BufNewFile,BufRead *.json set ft=javascript
