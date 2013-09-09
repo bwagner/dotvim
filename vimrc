@@ -18,7 +18,7 @@ if has("autocmd")
 endif 
 
 set langmenu=none
-:language message en_US
+:language message en_US.UTF8
 :filetype plugin on
 
 :let $VIM = "/Users/bwagner/vim/"
@@ -30,9 +30,9 @@ if has("dos16") || has("dos32") || has("win16") || has("win32")
 	source $VIMRUNTIME/../aExtNexus.vim
 	source $VIMRUNTIME/../FeralToggleCommentify.vim
 else
-	source $VIM/a.vim
-	source $VIM/aExtNexus.vim
-	source $VIM/FeralToggleCommentify.vim
+"	source $VIM/a.vim
+"	source $VIM/aExtNexus.vim
+"	source $VIM/FeralToggleCommentify.vim
 endif
 
 if has("gui_running")
