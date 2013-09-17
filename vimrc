@@ -65,6 +65,7 @@ set viminfo='1000,f1,n~/vim/viminfo
 :version 4.0
  set nocompatible
  syntax on
+ set synmaxcol=120
 " set digraph
  set noerrorbells
  set laststatus=1
