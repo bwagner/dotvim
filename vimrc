@@ -5,6 +5,8 @@ if has("autocmd")
 	filetype plugin indent on
 endif
 
+set clipboard=unnamedplus
+
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 set background=dark
