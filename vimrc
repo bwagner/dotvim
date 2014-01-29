@@ -33,6 +33,10 @@ else
 	:language message en_US.UTF8
 endif
 
+if has("unix")
+	map  "+y
+endif
+
 :filetype plugin on
 
 :let $VIM = "/Users/bwagner/vim/"
